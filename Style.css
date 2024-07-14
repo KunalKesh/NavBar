@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    background-color:whitesmoke;
+    min-height: 100vh;
+}
+.img{
+    border-radius: 50%;
+    width: 30x;
+    height: 50px;
+    margin-left: -5px ;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: rgb(182, 111, 249);
+    padding: 15px 18px;
+    transition: all  0.4s ease;
+    overflow-y: hidden;
+
+}
+.sidebar:hover{
+    width: 260px;
+}
+.sidebar-header h2{
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 20px;
+}
+.sidebar-header{
+    display: flex;
+    align-items: center;
+}
+.sidebar-links h4{
+    color: white;
+    margin: 5px 0px;
+    white-space:nowrap;
+}
+.sidebar-links h4 span{
+    opacity: 0;
+}
+.sidebar:hover .sidebar-links h4 span{
+    opacity: 1;
+}
+.sidebar-links li a{
+    color: white;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    padding: 10px; /*change*/
+    white-space: nowrap;
+    text-decoration: none;
+}
+.sidebar-links{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.sidebar-links li a:hover{
+    background-color: whitesmoke;
+    color:  rgb(182, 111, 249);
+    border-radius: 10px;
+    transition: all  0.4s ease;
+}
+.user_account{
+    margin: auto;
+    padding: 12px 10px;
+    margin-left: -10px;
+    display: flex;
+    gap: 17px;
+    
+}
+.user_account:hover{
+    cursor:pointer;
+}
+.user_account .user_profile{
+    color: white;
+    align-items: center;
+
+}
+.user_profile img{
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+.user_detail{
+    white-space: nowrap;
+}
+.user_detail h3{
+    color: white;
+    font-size: 1rem;
+}
+.user_detail span{
+    color: white;
+}
+
